@@ -1,0 +1,13 @@
+Reset Windows 10 Local Password After booting from USB, you will see Kali Linux Boot Menu. Choose the 3rd option which is Live (forensic mode).
+
+Enter the default username as root and password as toor when prompted.
+
+Open File Manager and navigate to the directory where the SAM is saved. This file is usually located in /Windows/System32/Config. Right-click a blank space in File Manager, and select Open Terminal Here.
+
+Type the command: chntpw -l SAM. It shows the list of usernames found in the SAM on your Windows 10 OS.
+
+Simply run the chntpw -u username SAM command to reset your lost password. Note: where username is the name of your actual Windows account. For example, my username is test, I should type chntpw -u test SAM after that hit Enter.
+
+Press 1 for clearing the previously set Windows password.
+
+Press y when asked if you want to save the changes to the SAM hive. Now, Reboot your computer and unplug the USB drive, you will see Window 10 automatically login without password.
