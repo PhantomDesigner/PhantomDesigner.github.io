@@ -1,2 +1,3 @@
 # PhantomDesigner.github.io
-Just a beginner.
+This is how you host a site BIATCHH.
+Sincerely, Saurav.XD
